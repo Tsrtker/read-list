@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative; /* 相对定位 */
+  }
+#leftplane {
+    background-color: rgba(255, 255, 255, 0.3); /* 半透明背景 */
+    backdrop-filter: blur(90px); /* 磨砂效果 */
+    width: 837px;  
+    height: 492px; 
+    position: absolute; /* 绝对定位 */
+    right: 80px; /* 添加右侧间距 */
+    border-radius: 25px;
+}
+#rightplane {
+    background-color: rgba(255, 255, 255);
+    width: 128px;  
+    height: 432px; 
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute; /* 绝对定位 */
+    left: 789px; /* 添加左侧间距 */
+    top: 30px; /* 添加上侧间距 */
+    -webkit-app-region: drag; /* 允许拖动 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+#book0{
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    position: absolute; /* 绝对定位 */
+    top: 24px;
+    left: 28px;
+}
+#book1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    position: absolute; /* 绝对定位 */
+    top: 84px;
+    left: 28px;
+}

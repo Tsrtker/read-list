@@ -4,11 +4,11 @@
   "description": "read-list",
   "main": "main.js",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "npx electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "package": "npx electron-forge package",
+    "make": "npx electron-forge make",
+    "publish": "npx electron-forge publish"
   },
   "author": "Wy",
   "license": "MIT",
@@ -22,7 +22,9 @@
     "@electron-forge/plugin-fuses": "^7.6.1",
     "@electron-forge/publisher-github": "^7.6.1",
     "@electron/fuses": "^1.8.0",
-    "electron": "^34.0.2"
+    "electron": "^34.0.2",
+    "electron-prebuilt-compile": "^latest_version",
+    "electron-forge": "^6.0.0-beta.54"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",

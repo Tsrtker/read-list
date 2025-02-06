@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF_8" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
@@ -10,12 +10,23 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./renderer.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>read-list</title>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <div id="leftplane">
+
+    </div>
+    <div id="rightplane">
+      <!-- <img src="yellowduck.jpg" alt="橘色鴨子香蕉風格" /> -->
+    </div>
+    <div id="book0">
+    </div>
+    <div id="book1">
+    </div>
+
   </body>
-  <script src="./renderer.js"></script>
+  
 </html>

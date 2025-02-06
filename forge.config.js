@@ -16,13 +16,16 @@ module.exports = {
     }
   ],
   packagerConfig: {
+    // icon:'favicon',
     asar: true,
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        // setupIcon: 'favicon.ico'
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -30,7 +33,11 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options: {
+          // icon: 'favicon.ico'
+        }
+      }
     },
     {
       name: '@electron-forge/maker-rpm',
