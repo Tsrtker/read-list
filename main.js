@@ -1,10 +1,10 @@
-require('update-electron-app')()
-const { app, BrowserWindow ,ipcMain} = require('electron/main')
+// require('update-electron-app')()
+const { app, BrowserWindow, ipcMain } = require('electron/main')
 const path = require('node:path')
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1140,
+    height: 1070,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -17,7 +17,7 @@ const createWindow = () => {
 app.whenReady().then(() => {
   ipcMain.handle('ping', () => 'pong')
   createWindow()
-//TODO：为什么放这里
+  //TODO：为什么放这里
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
@@ -30,3 +30,5 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
+
