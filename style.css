@@ -1,0 +1,22 @@
+/* 統一色F9F9FC */
+body {
+    background-color: #5050aa;
+    margin: 0 ;
+    display: flex;
+}
+
+nav {
+    background-color: #d19d3b;
+    color: #202224;
+    width: 72px;
+    height: 100%;
+}
+
+#top{
+    background-color: #9b2172;
+    color: #808192;
+    width: 1369px;
+    height: 40px;
+
+}
+
